@@ -75,8 +75,8 @@ We’ll be using **NotebookLM** to analyze research papers throughout the course
 
 ## 🚀 Resources to Become a Power User
 
-- 🎥 [Google NotebookLM Tutorial – Become a Power User in 15 Minutes](#)  
-- 🎥 [12 NotebookLM Epic Use Cases You Must Try](#)  
+- 🎥 [Google NotebookLM Tutorial – Become a Power User in 15 Minutes](https://www.youtube.com/watch?v=UG0DP6nVnrc)  
+- 🎥 [12 NotebookLM Epic Use Cases You Must Try](https://www.youtube.com/watch?v=9xjmvUS-UGU)  
 - 💬 [NotebookLM Subreddit](https://www.reddit.com/r/NotebookLM) – for recent updates and community use cases.
 
 ---
