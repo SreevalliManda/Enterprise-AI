@@ -31,26 +31,26 @@ Benchmarks are also classified by:
 ## Popular Benchmarks in Each Category
 
 ### 1. Language Understanding & QA
-- **MMLU (Massive Multitask Language Understanding)**  
+- **[MMLU (Massive Multitask Language Understanding)](https://github.com/hendrycks/test)**
   - Tests 57 subjects with multiple-choice questions  
   - Zero-shot and few-shot evaluation  
   - Scored on proportion of correct answers
 
-- **TruthfulQA**  
+- **[TruthfulQA](https://github.com/mbritz/TruthfulQA)**  
   - Evaluates factual accuracy across 38 categories  
   - GPT-3-based scorer
 
 ### 2. Reasoning & Commonsense
-- **HellaSwag** – Sentence completion for commonsense reasoning  
-- **BIG-Bench Hard (BBH)** – 23 challenging tasks, uses Chain-of-Thought prompting  
+- **[HellaSwag](https://rowanzellers.com/hellaswag/)** – Sentence completion for commonsense reasoning  
+- **[BIG-Bench Hard (BBH)](https://github.com/google/BIG-bench)** – 23 challenging tasks, uses Chain-of-Thought prompting  
 
 ### 3. Coding
-- **HumanEval** – Functionally correct code, Pass@k metric  
-- **CodeXGLUE** – 14 datasets, 10 coding tasks, metrics include Exact Match & BLEU Score  
+- **[HumanEval](https://github.com/openai/human-eval)** – Functionally correct code, Pass@k metric  
+- **[CodeXGLUE](https://github.com/microsoft/CodeXGLUE)** – 14 datasets, 10 coding tasks, metrics include Exact Match & BLEU Score  
 
 ### 4. Conversation & Chatbots
-- **Chatbot Arena** – Human pairwise voting, ranks models on live interactions  
-- **MT Bench** – Multi-turn chatbot evaluation, GPT-4 scoring
+- **[Chatbot Arena](https://www.chatbotarena.com/)** – Human pairwise voting, ranks models on live interactions  
+- **[MT Bench](https://mt-bench.github.io/)** – Multi-turn chatbot evaluation, GPT-4 scoring
 
 ---
 
