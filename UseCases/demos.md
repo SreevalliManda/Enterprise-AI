@@ -39,6 +39,8 @@
   - Watch 15+ Agentic AI application solutions.
   - Understand how to scope and build solutions with state-of-the-art techniques.
   - See live solutions for a wide range of enterprise verticals.
+  
+[Enterprise AI Projects Showcase](https://areganti.notion.site/Enterprise-AI-Projects-Showcase-25bc91fa3236804b8765e54dde771262)
 
 ---
 
