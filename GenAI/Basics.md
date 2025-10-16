@@ -27,7 +27,7 @@ Recommended for a **deep understanding of LLMs**:
    - [Stanford CS25 - Transformers United](https://cs25.github.io/)
 
 5. **Building LLMs from the Ground Up** – A 3-hour coding workshop  
-   - [Workshop Link](https://www.example.com/llm-workshop) *(replace with actual link if available)*
+   - [Workshop Link](https://www.youtube.com/watch?v=quh7z1q7-uc) 
 
 > This path is recommended for those who want to understand LLMs **under the hood**.
 
