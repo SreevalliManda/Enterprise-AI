@@ -93,8 +93,8 @@ Starter and application templates integrating with services like **OpenAI** and 
 
 ## 📚 Resources to Get Started
 
-* *Vercel's VP of Product:* [How to Use v0 to Build Your Own Ideas (Step-by-Step Guide)]()
-* *Video Tutorial:* [Build a Full-Stack App in 7 Minutes with v0 (Figma to Code)]()
+* *Vercel's VP of Product:* [How to Use v0 to Build Your Own Ideas (Step-by-Step Guide)](https://www.youtube.com/watch?v=sCFS_U7d9Do)
+* *Video Tutorial:* [Build a Full-Stack App in 7 Minutes with v0 (Figma to Code)]https://www.youtube.com/watch?v=cyFVtaLy-bA&t=278s()
 
 ---
 
