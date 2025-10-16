@@ -50,7 +50,7 @@ Benchmarks are also classified by:
 
 ### 4. Conversation & Chatbots
 - **[Chatbot Arena](https://www.chatbotarena.com/)** – Human pairwise voting, ranks models on live interactions  
-- **[MT Bench](https://mt-bench.github.io/)** – Multi-turn chatbot evaluation, GPT-4 scoring
+- **[MT Bench](https://huggingface.co/spaces/lmsys/mt-bench)** – Multi-turn chatbot evaluation, GPT-4 scoring
 
 ---
 
