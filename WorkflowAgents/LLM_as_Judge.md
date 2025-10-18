@@ -1,7 +1,6 @@
-# Evaluating LLM Judge Evaluations: Best Practices (Aishwarya's talk)
-
+# Evaluating LLM Judge Evaluations: Best Practices 
 **Video:**
-[Watch on YouTube](https://www.youtube.com/watch?v=OB99E7Y1cMA)
+[Watch on YouTube](https://maven.com/aishwarya-kiriti/genai-system-design/4/syllabus/modules/333cf3?item=a7b27e8ba34f097f)
 
 ---
 
