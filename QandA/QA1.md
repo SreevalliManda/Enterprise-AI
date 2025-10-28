@@ -9,18 +9,8 @@
 
 ---
 
-### Q: For the no-code track, do weekly assignments have to be completed in Langflow, or can we use other tools?
-**A:** You can use anything you want, but the course will only provide support for Langflow. All starter code and instructions are optimized for Langflow. While you're free to migrate to another tool if you have time, it's not recommended. The class focuses on learning AI concepts, not specific tools. It's better to stick with one tool, learn the concepts well, and then migrate later rather than being tool-obsessed. Understanding the concepts in Langflow will actually help you better understand other frameworks like N8N or OpenAI's agent builder.
-
----
-
 ### Q: Which no-code tools are most popular in the market today?
 **A:** N8N (also written as N-A-T-E-N) is quite popular. It existed before the AI boom as a workflow automation tool (similar to Zapier) and adapted well to AI by allowing model calls and tool calls within orchestrations. However, N8N treats many components as black boxes, which isn't ideal for learning. OpenAI's new agent builder is very early stage. Flowise is another framework mentioned. The key is that for learning purposes, you want tools that help you understand the modules clearly rather than treating them as black boxes.
-
----
-
-### Q: When using Langflow, I noticed that when I ask follow-up questions, it seems to use cached responses instead of searching again. Why is this happening?
-**A:** This is not a Langflow or Langchain limitation — it's how model APIs work. Models are stateless artifacts with weights in neural network layers. When you pass input, you get output based on the model's training knowledge cutoff. There are no additional tool calls or web searches happening automatically — just pure inference. The model returns what it has already learned during training. In Assignment 1, you'll learn how to tune the behavior of your application, and in Assignment 2, you'll learn how to give the model real-time information and knowledge.
 
 ---
 
@@ -142,20 +132,6 @@ Focus on **system-level reliability**, not just model accuracy.
 - Data confidence levels  
 - Organizational policies  
 Sensitive or uncertain responses should always be escalated. Define what’s acceptable vs. not acceptable for your context.
-
----
-
-## Additional Notes
-
-### Announcements
-- These are Core and Grow office hours focused on content.  
-- Assignment office hours are held 1 hour later with a different link.  
-- The Slido link for questions is in the announcements channel.  
-- The team is very active on Slack — students are encouraged to post questions there.
-
----
-
-## Repeated Themes & Best Practices
 
 ### 1. Problem-First, Not Tool-First
 - Don’t be “tool-obsessed.” Focus on concepts.  

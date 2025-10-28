@@ -1,17 +1,8 @@
-# Office Hours Q&A Summary
-
-## Payment & Model Setup
-
-**Q:** Is adding payment as $15 a good start? Which model does it default to for setup assignment?  
-**A:** $15 should be good for getting started. The model selection doesn't depend on where you're paying (the OpenAI platform website). You select the model in the framework you're using (Langflow or LangChain/LangGraph). The OpenAI platform is only for paying and managing usage. For the first assignment, you'll spend less than a dollar. The entire course budget should be around $20 maximum, with most costs coming from the final deep research system assignment.
-
----
-
 ## Model Memory & Agents
 
 **Q:** Could you explain the statement "An ML model has no inherent memory, it is naturally stateless" - so what is memory in an agent?  
 **A:** When we say an ML model has no inherent memory, it means the model doesn't actually remember past conversations. When you chat with ChatGPT and it seems to understand context, that's because the model provider (not the model itself) stores your conversation history in a database and injects your past conversations into each new query sent to the model.  
-In agents, memory works the same way - you retrieve relevant past conversations or information and artificially add it to the context when calling the model. One core way to do this is using **Retrieval Augmented Generation (RAG)**, which is covered in Week 3.  
+In agents, memory works the same way - you retrieve relevant past conversations or information and artificially add it to the context when calling the model. One core way to do this is using **Retrieval Augmented Generation (RAG)**.  
 There are different types of memory abstractions (episodic memory, procedural memory), but fundamentally, it's always artificial injection via context, not the model actually "remembering."
 
 The key distinction: The model API call itself is stateless. Products like ChatGPT have extensive engineering behind the scenes to manage conversations, attach files, and provide memory across different conversations. In your assignments, you'll be using the model APIs directly, not the full ChatGPT application.
@@ -79,10 +70,6 @@ Temperature affects randomness, not hallucination.
 
 ## Evals (Evaluations)
 
-**Q:** How deep will the course go into evals?  
-**A:** Every lecture will cover evals. Principle: *Every new component must have an eval.*  
-Evals are domain-specific and often cost money since they may use LLMs.  
-
 **Q:** What kinds of evals are covered?  
 **A:** Domain-specific, semantic, and code-based evals. Examples:  
 - Helpfulness  
@@ -98,7 +85,6 @@ Evals are domain-specific and often cost money since they may use LLMs.
 **A:**  
 - RAG → when model lacks external data access  
 - Fine-tuning → when model lacks domain or style knowledge  
-You'll learn the differences in detail later.  
 
 **Q:** Is RAG always about vector databases?  
 **A:** No. RAG simply means *retrieve and augment*. Retrieval can use:  
