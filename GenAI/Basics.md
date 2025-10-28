@@ -1,11 +1,14 @@
-# 🧠 [Grow] Understanding Deep Learning, Neural Networks & LLM Architecture
+# Understanding Deep Learning, Neural Networks & LLM Architecture
 
 ## Overview
-To understand how **LLMs** work, it's important to first grasp **neural networks** and **deep learning**, which in turn require a solid foundation in **machine learning**.
 
-> While deep knowledge isn’t required for most AI roles, it’s essential for modifying model architectures or building models from scratch. Most companies today leverage prebuilt models, so strong **application-level knowledge** is often sufficient.
+To deeply understand how LLMs work, you need to first understand neural networks and deep learning. And to grasp deep learning, you need a solid foundation in machine learning.
 
-Think of it like understanding how the web works vs. using the web to build online businesses. AI is now reaching a similar level of pervasiveness.
+While this deep knowledge isn't necessary and is often overkill for most AI roles, it becomes essential if you're working on modifying model architectures or building models from scratch. That said, very few companies develop models from scratch today—a lot can be achieved with strong application-level knowledge, which is the core focus of this course.
+
+Think of it like understanding how the web works and coding websites versus using those websites to build online businesses. AI is reaching that level of pervasiveness today.
+
+If at any point you want to dive deep into this field, there’s a long learning roadmap with our favorite recommendations below (Takes 80-100 hours or more!). However, if your goal is practical, application-level knowledge, a shorter roadmap (last section) can still give you enough understanding to work with LLMs effectively.
 
 ---
 
