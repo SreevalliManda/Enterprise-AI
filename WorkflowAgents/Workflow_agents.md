@@ -13,6 +13,8 @@ Prompt chaining breaks a task into a sequence of steps, where each LLM call proc
 **When to Use It:**
 Ideal for tasks that can be neatly divided into fixed subtasks. This approach trades off latency for higher accuracy, as each LLM call becomes a simpler, more manageable task.
 
+![alt text](image.png)
+
 ### Enterprise Use-Cases:
 
 **Healthcare**
@@ -43,6 +45,7 @@ Routing involves classifying an input and directing it to a specialized follow-u
 **When to Use It:**
 Best for complex tasks involving distinct categories. Routing enhances performance when inputs can be accurately classified.
 
+![alt text](image-1.png)
 ### Enterprise Use-Cases:
 
 **Healthcare**
@@ -68,6 +71,8 @@ LLMs can sometimes work on tasks simultaneously, with their outputs aggregated p
 **When to Use It:**
 Effective for speeding up tasks or gathering multiple perspectives for reliability.
 
+![alt text](image-2.png)
+
 ### Enterprise Use-Case:
 
 **Marketing:**
@@ -82,6 +87,8 @@ In this pattern, a central LLM (the orchestrator) dynamically breaks down tasks,
 
 **When to Use It:**
 For complex, unpredictable tasks like code refactoring or content generation where subtasks vary based on input. The orchestrator determines and manages task flow dynamically.
+
+![alt text](image-3.png)
 
 ---
 
