@@ -9,7 +9,7 @@ Most practitioners read research to understand its practical impact (and what it
 ### Steps:
 
 1. **Upload your paper to NotebookLM**
-   (start with the ones from the "Skill Based Prompting : A Deep Dive" (Lesson 3))
+   start with the ones from the "Skill Based Prompting : A Deep Dive" 
    👉 [NotebookLM](https://notebooklm.google.com)
 
 2. **Copy-paste the prompt (below) to extract key insights efficiently.**
