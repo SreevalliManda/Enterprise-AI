@@ -53,7 +53,7 @@ In enterprise settings, traditional metrics like BLEU or simple embedding simila
 
 This LLM can be prompted with specific criteria, for example, checking whether the response includes an order number, adheres to the company’s communication style, or meets any other niche requirements. The LLM then scores the output based on these tailored evaluation questions, providing a more nuanced and context-aware assessment of the response quality.
 
-Aishwarya has extensively discussed LLM judges and best practices for deploying them. You can check out her popular video from the 2024 MLOps World Summit for a deep dive into LLM judges in the next lesson — [Watch Here](https://www.youtube.com/watch?v=OB99E7Y1cMA).
+[Watch Here](https://www.youtube.com/watch?v=OB99E7Y1cMA).
 
 ---
 
