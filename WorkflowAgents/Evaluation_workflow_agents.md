@@ -43,7 +43,7 @@ For tasks with a well-defined set of answers, such as in a customer support rout
 
 For more free-form responses, traditional language metrics like BLEU can be useful. For example, when summarizing a medical report, you might measure how closely the generated summary aligns with a human-curated version. BLEU is a metric originally designed for machine translation; it compares a generated text to one or more reference texts by checking how many words or short phrases (known as "n-grams") match. The more matches there are, the higher the BLEU score, suggesting that the output is closer to what a human might produce. However, while BLEU provides a quick measure of quality, it may not fully capture the nuance or context-specific accuracy required for some tasks.
 
-Another approach is to generate embeddings ([a short video explaining embeddings](https://www.youtube.com/watch?v=9xjmvUS-UGU))—numerical representations of text—for both the ideal results and the output. These embeddings capture the semantic meaning of the text, allowing you to compare them for similarity. In simple terms, if the embeddings of two texts are very close to each other in a mathematical space, it indicates that they convey similar meanings.
+Another approach is to generate embeddings ([a short video explaining embeddings](https://www.youtube.com/watch?v=wgfSDrqYMJ4))—numerical representations of text—for both the ideal results and the output. These embeddings capture the semantic meaning of the text, allowing you to compare them for similarity. In simple terms, if the embeddings of two texts are very close to each other in a mathematical space, it indicates that they convey similar meanings.
 
 ---
 
