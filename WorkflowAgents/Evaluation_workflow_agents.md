@@ -53,7 +53,7 @@ In enterprise settings, traditional metrics like BLEU or simple embedding simila
 
 This LLM can be prompted with specific criteria, for example, checking whether the response includes an order number, adheres to the company’s communication style, or meets any other niche requirements. The LLM then scores the output based on these tailored evaluation questions, providing a more nuanced and context-aware assessment of the response quality.
 
-[Watch Here](https://www.youtube.com/watch?v=OB99E7Y1cMA).
+
 
 ---
 
