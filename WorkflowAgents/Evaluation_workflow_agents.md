@@ -97,10 +97,7 @@ This occurs when malicious users manipulate input prompts to bypass safeguards o
 
 As generative AI models are continuously updated and optimized, the ideal prompt for a given task can change over time. This means that what worked yesterday might not yield the same results today, leading to inconsistent performance. Addressing prompt drift demands automated prompt optimization techniques and regular evaluation to ensure that the system remains effective and aligned with enterprise requirements.
 
-We'll explore **Issue 1** — hallucinations — in greater detail in our upcoming lectures on enterprise systems and RAG (Retrieval-Augmented Generation).
-
-Points 2 and 3, prompt hacking and prompt drift, are inherent challenges in generative AI systems (not just workflow agents) and we’ll talk a bit about them in our upcoming lectures on enterprise systems.
-
+Prompt hacking and prompt drift, are inherent challenges in generative AI systems (not just workflow agents) 
 ---
 
 
