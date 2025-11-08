@@ -1,4 +1,12 @@
-# Evaluating LLM Judge Evaluations: Best Practices 
+# Evaluating LLM Ju### **Enter LLM-Judges**
+
+![Enter LLM Judges](llm_judge_images/enter_llm_judges.png)
+
+LLM judges, also known as **## **Step 4: Calibrating the Judge**
+
+![Step 4: Calibrating the Judge](llm_judge_images/step4_calibrating_judge.png)
+
+* Compare **LLM judge** and **expert** evaluations using correlation metrics (e.g., Cohen's Kappa).as-a-Judge"**, are LLMs used to evaluate the quality of outputs from other LLMs.valuations: Best Practices 
 ---
 
 ## **Evaluating Gen AI is Hard!**
@@ -7,7 +15,7 @@
 
 Today's AI tackles diverse tasks like summarization, chat, and reasoning in unseen domains and tasks — each requiring specialized assessment methods.
 
-![alt text](image-4.png)
+![AI Models Expanded Capabilities](llm_judge_images/ai_models_expanded_capabilities.png)
 
 ### **Traditional Metrics Can't Keep Up**
 
@@ -19,7 +27,6 @@ Relying solely on human evaluation is unsustainable — it's expensive, slow, an
 
 ### **Enter LLM-Judges**
 
-![alt text](image-5.png)
 
 LLM judges, also known as **“LLM-as-a-Judge”**, are LLMs used to evaluate the quality of outputs from other LLMs.
 They offer a faster and more cost-effective way to assess complex AI responses compared to relying solely on human evaluation.
@@ -28,13 +35,13 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **LLM-Judge Evaluation**
 
-![alt text](image-6.png)
+![LLM Judge Evaluation Process](llm_judge_images/llm_judge_evaluation.png)
 
 ---
 
 ## **What is AI Collusion?**
 
-![alt text](image-7.png)
+![What is AI Collusion](llm_judge_images/what_is_ai_collusion.png)
 
 * **Definition:** Multiple AI systems interact, unintentionally amplifying each other's errors.
 * **How It Happens:** Errors from one AI agent can ripple through to others, creating feedback loops of mistakes.
@@ -45,7 +52,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **AI Collusion in the Wild**
 
-![alt text](image-8.png)
+![AI Collusion in the Wild Example](llm_judge_images/ai_collusion_in_wild.png)
 
 * The **Code Generation Agent** creates code that calls an outdated API version.
 * The **Debugging Agent** checks syntax but misses the outdated API, assuming the code is valid.
@@ -57,7 +64,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **How Collusion Manifests in LLM Judges**
 
-![alt text](image-9.png)
+![How Collusion Manifests in LLM Judges](llm_judge_images/collusion_manifests_in_judges.png)
 
 * **Shared Knowledge Biases:** LLMs, including judges, often reflect biases in their training data (e.g., societal or gender biases).
 * **Superficial Feature Prioritization:** LLM judges may focus on fluency and grammar, overlooking factual accuracy or logic.
@@ -72,7 +79,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ### **Step 0: Find Who to Clone**
 
-![alt text](image-10.png)
+![Step 0: Find Who to Clone](llm_judge_images/step0_find_who_to_clone.png)
 
 * **Ambiguity in AI leads to Collusion:** Eliminate ambiguity with Domain Expert Pairs.
 * Gather or clone one expert who knows the correct answers to almost all queries related to the application.
@@ -85,7 +92,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 1: Evaluation Metrics**
 
-![alt text](image-11.png)
+![Step 1: Evaluation Metrics](llm_judge_images/step1_evaluation_metrics.png)
 
 * Work closely with the domain expert to identify **key metrics** for evaluating responses.
 * **Limit metrics** to essential, non-overlapping ones for clear insights.
@@ -100,7 +107,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 2: Gather Dataset and Freeze**
 
-![alt text](image-12.png)
+![Step 2: Gather Dataset and Freeze](llm_judge_images/step2_gather_dataset_freeze.png)
 
 * Collect a dataset with both **inputs** and **generated outputs**.
 * Collaborate with the domain expert to refine responses until satisfaction.
@@ -116,7 +123,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 3: Build a Blind Judge**
 
-![alt text](image-13.png)
+![Step 3: Build a Blind Judge](llm_judge_images/step3_build_blind_judge.png)
 
 * Create a **prompt** for the LLM to evaluate responses based on chosen metrics.
 * **Blind Judge:** No adjusting the prompt based on expert evaluations — run uncalibrated first.
@@ -129,7 +136,6 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 4: Calibrating the Judge**
 
-![alt text](image-14.png)
 
 * Compare **LLM judge** and **expert** evaluations using correlation metrics (e.g., Cohen’s Kappa).
 * Focus on disagreement areas — refine prompts accordingly.
@@ -141,7 +147,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 5: Iterate**
 
-![alt text](image-15.png)
+![Step 5: Iterate](llm_judge_images/step5_iterate.png)
 
 * Repeat calibration until agreement is satisfactory.
 * **Spot check** the LLM judge to find human-missed errors.
@@ -153,7 +159,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Post-Calibration**
 
-![alt text](image-16.png)
+![Post-Calibration Process](llm_judge_images/post_calibration.png)
 
 * Once calibrated, the **LLM judge can replace human judges** for evaluating AI responses.
 * Note: Even at 95% accuracy for both LLM and human, disagreements add uncertainty.
