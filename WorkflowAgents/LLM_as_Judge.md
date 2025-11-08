@@ -6,6 +6,7 @@
 ### **AI Models Have Expanded Capabilities**
 
 Today's AI tackles diverse tasks like summarization, chat, and reasoning in unseen domains and tasks — each requiring specialized assessment methods.
+
 ![alt text](image-4.png)
 
 ### **Traditional Metrics Can't Keep Up**
@@ -17,6 +18,7 @@ Classic generation measures like **ROUGE** and **BLEU** struggle to assess the r
 Relying solely on human evaluation is unsustainable — it's expensive, slow, and lacks objectivity, hindering rapid AI development and deployment.
 
 ### **Enter LLM-Judges**
+
 ![alt text](image-5.png)
 
 LLM judges, also known as **“LLM-as-a-Judge”**, are LLMs used to evaluate the quality of outputs from other LLMs.
@@ -25,6 +27,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **LLM-Judge Evaluation**
+
 ![alt text](image-6.png)
 
 ---
@@ -68,6 +71,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 **It’s Good Calibration!**
 
 ### **Step 0: Find Who to Clone**
+
 ![alt text](image-10.png)
 
 * **Ambiguity in AI leads to Collusion:** Eliminate ambiguity with Domain Expert Pairs.
@@ -80,7 +84,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Step 1: Evaluation Metrics**
+
 ![alt text](image-11.png)
+
 * Work closely with the domain expert to identify **key metrics** for evaluating responses.
 * **Limit metrics** to essential, non-overlapping ones for clear insights.
 * **Rule of Thumb:** *Less is more.*
@@ -93,7 +99,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Step 2: Gather Dataset and Freeze**
+
 ![alt text](image-12.png)
+
 * Collect a dataset with both **inputs** and **generated outputs**.
 * Collaborate with the domain expert to refine responses until satisfaction.
 * Have the expert score each response (based on metrics) and provide **reasoning**.
@@ -107,7 +115,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Step 3: Build a Blind Judge**
+
 ![alt text](image-13.png)
+
 * Create a **prompt** for the LLM to evaluate responses based on chosen metrics.
 * **Blind Judge:** No adjusting the prompt based on expert evaluations — run uncalibrated first.
 * This is your **baseline for calibration**.
@@ -118,7 +128,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Step 4: Calibrating the Judge**
+
 ![alt text](image-14.png)
+
 * Compare **LLM judge** and **expert** evaluations using correlation metrics (e.g., Cohen’s Kappa).
 * Focus on disagreement areas — refine prompts accordingly.
 * Verify reasoning even when LLM and expert agree — to catch fluke alignments.
@@ -128,7 +140,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Step 5: Iterate**
+
 ![alt text](image-15.png)
+
 * Repeat calibration until agreement is satisfactory.
 * **Spot check** the LLM judge to find human-missed errors.
 * Keep the **application frozen** during calibration to avoid collusion.
@@ -138,7 +152,9 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 ---
 
 ## **Post-Calibration**
+
 ![alt text](image-16.png)
+
 * Once calibrated, the **LLM judge can replace human judges** for evaluating AI responses.
 * Note: Even at 95% accuracy for both LLM and human, disagreements add uncertainty.
 * **Freeze each phase carefully:**
