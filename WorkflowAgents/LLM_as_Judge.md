@@ -1,12 +1,4 @@
-# Evaluating LLM Ju### **Enter LLM-Judges**
-
-![Enter LLM Judges](llm_judge_images/enter_llm_judges.png)
-
-LLM judges, also known as **## **Step 4: Calibrating the Judge**
-
-![Step 4: Calibrating the Judge](llm_judge_images/step4_calibrating_judge.png)
-
-* Compare **LLM judge** and **expert** evaluations using correlation metrics (e.g., Cohen's Kappa).as-a-Judge"**, are LLMs used to evaluate the quality of outputs from other LLMs.valuations: Best Practices 
+# Evaluating LLM Judge Evaluations: Best Practices 
 ---
 
 ## **Evaluating Gen AI is Hard!**
@@ -27,6 +19,7 @@ Relying solely on human evaluation is unsustainable — it's expensive, slow, an
 
 ### **Enter LLM-Judges**
 
+![Enter LLM Judges](llm_judge_images/enter_llm_judges.png)
 
 LLM judges, also known as **“LLM-as-a-Judge”**, are LLMs used to evaluate the quality of outputs from other LLMs.
 They offer a faster and more cost-effective way to assess complex AI responses compared to relying solely on human evaluation.
@@ -136,6 +129,7 @@ They offer a faster and more cost-effective way to assess complex AI responses c
 
 ## **Step 4: Calibrating the Judge**
 
+![Step 4: Calibrating the Judge](llm_judge_images/step4_calibrating_judge.png)
 
 * Compare **LLM judge** and **expert** evaluations using correlation metrics (e.g., Cohen’s Kappa).
 * Focus on disagreement areas — refine prompts accordingly.
