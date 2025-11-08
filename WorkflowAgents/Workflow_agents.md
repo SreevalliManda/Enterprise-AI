@@ -1,6 +1,9 @@
-# Workflow Agents in the Enterprise (Popular Architectures & Examples)
+# Workflow Agents in the Enterprise (Popular Architectures & ExamplWhen to Use It:
+This workflow shines for complex tasks where you can't predict the necessary subtasks in advance. For example, in coding, the number of files to change and the type of changes often depend on the specific task. Unlike simple parallelization, this method's flexibility allows the orchestrator to determine the required subtasks based on the input.
 
-We learned quite a bit about prompting LLMs in the last lesson. By orchestrating LLMs in defined workflows, we can build end-to-end use cases—what many call workflow agents (or, in some circles, “agentic” systems). But let’s not get bogged down in the terminology.
+![Orchestrator-Workers Workflow](workflow_agents_images/orchestrator_workers_workflow.png)
+
+---e learned quite a bit about prompting LLMs in the last lesson. By orchestrating LLMs in defined workflows, we can build end-to-end use cases—what many call workflow agents (or, in some circles, “agentic” systems). But let’s not get bogged down in the terminology.
 
 There are several popular design patterns for building workflow agents. Below are a few examples. Keep in mind, these aren’t the only options—you can always invent your own. The key idea is that in workflows, you’re the one doing the planning. AI models are here to understand and generate knowledge; planning is up to you.
 
@@ -13,7 +16,7 @@ Prompt chaining breaks a task into a sequence of steps, where each LLM call proc
 **When to Use It:**
 Ideal for tasks that can be neatly divided into fixed subtasks. This approach trades off latency for higher accuracy, as each LLM call becomes a simpler, more manageable task.
 
-![alt text](image.png)
+![Prompt Chaining Workflow](workflow_agents_images/prompt_chaining_workflow.png)
 
 ### Enterprise Use-Cases:
 
@@ -32,7 +35,7 @@ Routing involves classifying an input and directing it to a specialized follow-u
 When to Use It:
 Best suited for complex tasks that involve distinct categories. If you can accurately classify the inputs—whether by an LLM or a traditional algorithm—routing can improve overall performance.
 
-![alt text](image-1.png)
+![Routing Workflow](workflow_agents_images/routing_workflow.png)
 ### Enterprise Use-Cases:
 
 In Healthcare, you could develop a Triage Systems workflow that automatically classifies patient symptoms and routes them to the appropriate specialist—be it cardiology, neurology, or another department—based on the urgency and nature of the issue. Another option is an Insurance Claims Processing workflow that directs claims to different review teams depending on the type of treatment or procedure, thereby streamlining the entire review process.
@@ -52,7 +55,7 @@ Voting: Running the same task multiple times to gather diverse outputs.
 When to Use It:
 Effective when tasks can be split for speed or when you need multiple perspectives for higher-confidence results. For complex tasks with many factors, separate LLM calls can focus on individual aspects, improving overall quality.
 
-![alt text](image-2.png)
+![Parallelization Workflow](workflow_agents_images/parallelization_workflow.png)
 
 ### Enterprise Use-Case:
 
@@ -67,8 +70,6 @@ In the orchestrator-workers pattern, a central LLM dynamically breaks down tasks
 
 When to Use It:
 This workflow shines for complex tasks where you can’t predict the necessary subtasks in advance. For example, in coding, the number of files to change and the type of changes often depend on the specific task. Unlike simple parallelization, this method’s flexibility allows the orchestrator to determine the required subtasks based on the input.
-
-![alt text](image-3.png)
 
 ---
 
