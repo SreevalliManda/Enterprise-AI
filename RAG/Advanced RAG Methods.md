@@ -342,3 +342,71 @@ Example (HR Chatbot cont’d):
 | Expense Policy      | Travel Expenses, Internet Expenses...       | Travel Expenses: Doc9, Doc10                 |
 |                     |                                             | Internet Expenses: Doc11, Doc12              |
 
+Here is the main content, as you requested, from "The Needle In a Haystack Test: Evaluating the Performance of LLM RAG Systems" on Arize:
+
+***
+
+# The Needle In a Haystack Test: Evaluating the Performance of LLM RAG Systems
+
+## Introduction
+
+Retrieval-augmented generation (RAG) underpins many of the LLM applications in the real world today, from companies generating headlines to solo developers solving problems for small businesses. With RAG’s importance likely to grow, ensuring its effectiveness is paramount. The evaluation of RAG, therefore, has become a critical part in the development and deployment of these systems. One innovative approach to this challenge is the “Needle in a Haystack” test, first outlined by Greg Kamradt in this X post and discussed in detail on his YouTube.
+
+## What Is the Needle In a Haystack Test for LLMs?
+
+The “Needle In a Haystack” test is designed to evaluate the performance of LLM RAG systems across different sizes of context. It works by embedding specific, targeted information (the “needle”) within a larger, more complex body of text (the “haystack”). The goal is to assess an LLM’s ability to identify and utilize this specific piece of information amidst a vast amount of data.
+
+Often in RAG systems, the context window is overflowing with information: large pieces from vector databases, mixed with instructions, templating, and more. This evaluation tests an LLM’s ability to pinpoint specifics in that mess. Your RAG system might retrieve great context, but what use is this if the granular specifics within are overlooked?
+
+This test was run multiple times across several leading language models.
+
+## What Are the Main Takeaways from The Needle In a Haystack Research?
+
+- Not all LLMs are the same. Models have different training objectives. For example, Anthropic’s Claude is wordier, often avoiding unsubstantiated claims.
+- Minute prompt differences lead to drastically different model outcomes. Certain LLMs need tailored prompting for best performance.
+- When building on LLMs with private data, continuously evaluate retrieval/model performance; small differences can have a major impact.
+
+## The Creation of The Needle In a Haystack Test
+
+The test was first used to evaluate OpenAI’s ChatGPT-4 and Anthropic’s Claude 2.1. An out-of-place statement (“The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day”) was placed at varying depths and lengths in context snippets from Paul Graham essays.
+
+Models were prompted to answer what the best thing to do in San Francisco was, using only the provided context. This was repeated for different document depths (0% to 100%) and context lengths (from 1K tokens to the token limits, 128k for GPT-4, 200k for Claude 2.1).
+
+- ChatGPT-4’s performance declined after >64k tokens, with a sharp fall at 100k+. If the “needle” is near the beginning, the model may overlook it. Placed at the end/first sentence, performance remains strong.
+- Claude 2.1’s initial run finished with 27% retrieval accuracy. Performance declined with context length, increased when the needle was near the bottom/first sentence, with 100% accuracy in that position.
+
+## Anthropic’s Response
+
+Anthropic reran the test with these tweaks:
+- Changed the “needle” to better match the "haystack" topic. Claude 2.1 was trained not to answer if the context lacked sufficient information, leading to verbose responses or omissions.
+- Added a prompt line to return the most relevant sentence, avoiding unsubstantiated claims.
+
+This led to a jump in Claude’s retrieval accuracy from 27% to 98%.
+
+## Our Research
+
+To improve rigor, Arize used:
+- Random number needles (to avoid caching)
+- Own evaluation library for speed and to search directly for the number in the output
+- A separate test for when the system should mark an answer as unanswerable
+
+Tests ran across multiple configs using ChatGPT-4, Claude 2.1 (with/without Anthropic’s prompt), Mistral’s 8X7B-v0.1, and 7B Instruct. Several prompt templates were tried.
+
+- Code for these tests is available on GitHub.
+
+## Results
+
+- Findings for ChatGPT and Claude (without prompting guidance) matched Kamradt’s: performance problems in upper-right of the heatmap (long context, needle near beginning).
+- For Claude 2.1 with prompting guidance, Arize didn’t reach Anthropic’s 98%, but saw a significant decrease in misses (from 165 to 74) just by adding a 10-word instruction.
+- Mixtral (MOE) models did surprisingly well for retrieval compared to 7B Instruct.
+
+## Conclusion
+
+LLMs will only grow in importance, so evaluating and understanding their retrieval skills is crucial. The Needle in a Haystack test quantifies the ability to find key info amid noise.
+
+- ChatGPT-4 is currently the top performer.
+- Tweaks to prompt structure greatly boost Claude 2.1's results.
+- Mixtral 8x7b MOE models exceeded expectations.
+
+![ChatGPT-4-performance](RAG_Images/ChatGPT-4-performance.png)
+![Claude-2.1-performance](RAG_Images/Claude-2.1-performance.png)
