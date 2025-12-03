@@ -35,10 +35,6 @@ If you want to dive deeper into what NotebookLM can do, here are some of our fav
 
 Google NotebookLM Tutorial - Become A Power User in 15 Minutes: [Watch here](https://www.youtube.com/watch?v=UG0DP6nVnrc)
 
-12 NotebookLM Epic Use Cases You Must Try: [Watch here] (https://www.youtube.com/watch?v=9xjmvUS-UGU)
+12 NotebookLM Epic Use Cases You Must Try: [Watch here](https://www.youtube.com/watch?v=9xjmvUS-UGU)
 
 For recent updates and interesting use cases, check out the NotebookLM subreddit. [Click here](https://www.reddit.com/r/notebooklm/)
-
----
-
-If you'd like, I can also format it into a **Word document**, **PDF**, or **slides**.
