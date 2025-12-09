@@ -1,14 +1,10 @@
 # Introduction to Generative AI & Enterprise AI
 
-## Presentation Links
-
 1. [Introduction to Generative AI & Agentic AI](https://www.canva.com/design/DAG0MsWLQxE/kQVzgjSUDX1O8Oro0x0Vig/view?utm_content=DAG0MsWLQxE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h55f5c4420b)
 
 2. [ Designing AI Applications (Iterative Solution Design)](https://www.canva.com/design/DAG0SY3IV8Q/E73VAWUAqF-482YnYJaMvg/view?utm_content=DAG0SY3IV8Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he00891b6b7)
 
 ---
-
-### Introduction & Fundamentals
 
 ![AI Adoption Trends](Intro_Images/01_AI_Adoption_Trends_McKinsey_2017_2025.png)
 *AI Adoption Trends (McKinsey 2017-2025)*
@@ -39,8 +35,6 @@
 
 ![ML Models Are Stateless](Intro_Images/10_ML_Models_Are_Stateless_Concept.png)
 *ML Models Are Stateless - Core Concept*
-
-### LLM Architecture & Models
 
 ![What Are Neural Networks](Intro_Images/11_What_Are_Neural_Networks_Intro.png)
 *What Are Neural Networks - Introduction*
@@ -132,8 +126,6 @@
 ![All AI Benchmarks Are Biased](Intro_Images/40_all_ai_benchmarks_are_biased_message.png)
 *All AI Benchmarks Are Biased - Message*
 
-### Ethics, Security & Future Trends
-
 ![Benchmarking Sources and Metrics](Intro_Images/41_benchmarking_sources_and_metrics_overview.png)
 *Benchmarking Sources and Metrics Overview*
 
@@ -163,6 +155,84 @@
 
 ![Large Reasoning Models DeepSeek](Intro_Images/50_large_reasoning_models_deepseek_r1_overview.png)
 *Large Reasoning Models - DeepSeek R1 Overview*
+
+![Designing AI Solutions Overview](Intro2_images/01_designing_ai_solutions_overview.png)
+*Designing AI Solutions Overview*
+
+![Rise of Enterprise AI Systems](Intro2_images/02_rise_of_enterprise_ai_systems.png)
+*Rise of Enterprise AI Systems*
+
+![Example Use Case Traditional Predictive Generative AI](Intro2_images/03_example_usecase_traditional_predictive_generative_ai.png)
+*Example Use Case - Traditional Predictive Generative AI*
+
+![Determinism Framework Comparison](Intro2_images/04_determinism_framework_comparison.png)
+*Determinism Framework Comparison*
+
+![Non-Deterministic Outputs Headache](Intro2_images/05_non_deterministic_outputs_headache.png)
+*Non-Deterministic Outputs Headache*
+
+![Generative AI Challenges to Add](Intro2_images/06_generative_ai_challenges_to_add.png)
+*Generative AI Challenges to Add*
+
+![Enterprises Want Deterministic Outcomes](Intro2_images/07_enterprises_want_deterministic_outcomes.png)
+*Enterprises Want Deterministic Outcomes*
+
+![AI Solution Design Flowchart](Intro2_images/08_ai_solution_design_flowchart.png)
+*AI Solution Design Flowchart*
+
+![Choosing Applications Overview](Intro2_images/09_choosing_applications_overview.png)
+*Choosing Applications Overview*
+
+![Open Source vs Closed Source Models MOF Classes](Intro2_images/10_open_source_vs_closed_source_models_mof_classes.png)
+*Open Source vs Closed Source Models - MOF Classes*
+
+![Open Weight vs Closed Source Models Chart](Intro2_images/11_open_weight_vs_closed_source_models_chart.png)
+*Open Weight vs Closed Source Models Chart*
+
+![Choosing AI Models Guidelines](Intro2_images/12_choosing_ai_models_guidelines.png)
+*Choosing AI Models Guidelines*
+
+![Choosing AI Models TLDR Hosted vs Self Hosted](Intro2_images/13_choosing_ai_models_tldr_hosted_vs_self_hosted.png)
+*Choosing AI Models TLDR - Hosted vs Self Hosted*
+
+![AI Model Selection Pillars](Intro2_images/14_ai_model_selection_pillars.png)
+*AI Model Selection Pillars*
+
+![Useful AI Tools Leaderboards Overview](Intro2_images/15_useful_ai_tools_leaderboards_overview.png)
+*Useful AI Tools Leaderboards Overview*
+
+![Fun Fact Start with Medium Sized Models](Intro2_images/16_fun_fact_start_with_medium_sized_models.png)
+*Fun Fact - Start with Medium Sized Models*
+
+![Choosing AI Models TLDR Summary](Intro2_images/17_choosing_ai_models_tldr_summary.png)
+*Choosing AI Models TLDR Summary*
+
+![Designing Applications Data Importance](Intro2_images/18_designing_applications_data_importance.png)
+*Designing Applications - Data Importance*
+
+![Example Use Case Adyen LangChain Overview](Intro2_images/19_example_usecase_adyen_langchain_overview.png)
+*Example Use Case - Adyen LangChain Overview*
+
+![Data Requirements Support Tickets Example](Intro2_images/20_data_requirements_support_tickets_example.png)
+*Data Requirements - Support Tickets Example*
+
+![Data Requirements Context Importance](Intro2_images/21_data_requirements_context_importance.png)
+*Data Requirements - Context Importance*
+
+![Application Decision Levers Enterprise](Intro2_images/22_application_decision_levers_enterprise.png)
+*Application Decision Levers - Enterprise*
+
+![Adyen Use Case System Versions V0 V1 V2](Intro2_images/23_adyen_usecase_system_versions_v0_v1_v2.png)
+*Adyen Use Case - System Versions V0, V1, V2*
+
+![Adyen Use Case Iterative Solution Design](Intro2_images/24_adyen_usecase_iterative_solution_design.png)
+*Adyen Use Case - Iterative Solution Design*
+
+![Designing AI Systems Overview](Intro2_images/25_designing_ai_systems_overview.png)
+*Designing AI Systems Overview*
+
+![Choosing Applications Setup and Formats](Intro2_images/26_choosing_applications_setup_and_formats.png)
+*Choosing Applications - Setup and Formats*
 
 ---
 
