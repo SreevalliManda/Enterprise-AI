@@ -32,7 +32,7 @@ Recommended for a **deep understanding of LLMs**:
 5. **Building LLMs from the Ground Up** – A 3-hour coding workshop  
    - [Workshop Link](https://www.youtube.com/watch?v=quh7z1q7-uc) 
 
-> This path is recommended for those who want to understand LLMs **under the hood**.
+This path is recommended for those who want to understand LLMs **under the hood**.
 
 ---
 
@@ -43,6 +43,6 @@ For a **practical, application-level understanding** of LLMs and transformers:
 - [Andrej Karpathy’s Video on LLM Training – LLMs: Training & Fine-Tuning](https://www.youtube.com/watch?v=kCc8FmEb1nY)  
 - [Illustrating Reinforcement Learning from Human Feedback (RLHF) – HuggingFace](https://huggingface.co/blog/rlhf)
 
-> This shorter path won’t make you an ML or deep learning expert but gives a solid grasp of LLMs for practical use.
+This shorter path won’t make you an ML or deep learning expert but gives a solid grasp of LLMs for practical use.
 
 ---
