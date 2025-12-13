@@ -1,4 +1,4 @@
-# Skill Based Prompting : A Deep Dive
+# Skill Based Prompting : 
 
 ### Level 1: In-Context Learning
 
