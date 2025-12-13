@@ -1,5 +1,373 @@
 # RAG Introduction
 
+# 1. What Is Agentic AI?
+
+Agentic AI combines **Generative AI** with the ability to:
+
+* Call APIs and external tools
+* Retrieve and store information from memory
+* Plan multi-step tasks
+* Execute those plans autonomously
+
+In other words, Agentic AI = **LLM + Tools + Memory + Planning + Execution**.
+
+This is what allows AI systems to act, not just generate text.
+
+---
+
+# 2. The Challenge: Stateless Agents
+
+Even advanced agents suffer from two fundamental limitations:
+
+### **1. No Memory (Statelessness)**
+
+LLMs forget everything outside the current conversation.
+Feedback, preferences, and corrections do not persist unless explicitly stored.
+
+### **2. Limited Context Window**
+
+LLMs can only ingest data that fits inside the model’s context length.
+Enterprises typically have **gigabytes** of documents, logs, manuals, contracts, and knowledge — far too large to fit into a prompt.
+
+Because of these limitations, agents cannot maintain long-term knowledge or autonomously scale across large datasets.
+
+---
+
+# 3. The Solution: Retrieval-Augmented Generation (RAG)
+
+RAG addresses these limitations by giving LLMs a way to access **external knowledge at query time** — without exceeding the model’s context window.
+
+RAG enables:
+
+* Contextual enrichment
+* Retrieval of enterprise-specific information
+* Use of memory across tasks
+* Reduction of hallucinations
+* Access to large-scale datasets in real time
+
+RAG is foundational for building reliable enterprise AI systems.
+
+---
+
+# 4. What RAG Actually Does
+
+RAG retrieves only the **most relevant information** from a large dataset and injects it into the LLM’s context *just in time*.
+
+To do this, RAG relies on:
+
+* Embeddings
+* Vector search
+* Chunking
+* Retrieval pipelines
+
+This requires building a **semantic search system** tailored to the enterprise’s data.
+
+---
+
+# 5. Embeddings and Vector Representations
+
+Embeddings convert text into **dense numerical vectors** that represent meaning.
+Two pieces of text with similar meaning will have embeddings that lie close together in high-dimensional space.
+
+You can embed:
+
+* Words
+* Sentences
+* Paragraphs
+* Documents
+* Images
+* Audio
+
+Embeddings allow AI models to compare meaning efficiently, enabling semantic search.
+
+### Why embeddings matter:
+
+* Traditional keyword search fails on semantic matches (“capital of France” vs “Paris”).
+* Vectors capture meaning, not surface words.
+* They support fuzzy matching and contextual understanding.
+
+Similarity scores range from **0 to 1**:
+
+* 0 → completely unrelated
+* 1 → identical meaning
+
+---
+
+# 6. The RAG Workflow (Three Phases)
+
+RAG systems operate in three clearly separated phases:
+
+---
+
+## **Phase 1: Ingestion (Offline)**
+
+Before the system runs, you must prepare the data:
+
+1. **Document Loading** — from PDFs, URLs, databases, images, etc.
+2. **Chunking/Splitting** — breaking text into smaller pieces.
+3. **Embedding** — converting chunks into vectors.
+4. **Vector Storage** — saving those embeddings in a vector database.
+
+This phase is computation-heavy but done once.
+
+---
+
+## **Phase 2: Retrieval (Real-Time)**
+
+At query time:
+
+1. The user sends a question.
+2. The system embeds the question.
+3. It searches the vector database for similar chunks.
+4. It returns the most relevant chunks (Top-K retrieval).
+
+This creates a context pack that will be added to the prompt.
+
+---
+
+## **Phase 3: Generation**
+
+The LLM receives:
+
+* The user query
+* The retrieved context
+
+It then generates the final answer.
+
+This is where hallucination reduction, factual grounding, and personalization occur.
+
+---
+
+# 7. Enterprise RAG
+
+Enterprise RAG enhances workflow agents by:
+
+* Ensuring factual grounding
+* Personalizing answers based on internal data
+* Integrating with documentation, logs, chats, manuals
+* Reducing hallucinations significantly
+* Supporting diverse data formats
+
+However — **every new component must be evaluated**.
+
+---
+
+# 8. RAG Evaluation Metrics
+
+Evaluation is essential.
+RAG performance is measured across two main categories:
+
+---
+
+## **A. Retrieval Metrics** (How well did we fetch relevant data?)
+
+### **1. Context Recall**
+
+Did the correct document appear in the Top-K results?
+
+Example:
+If an answer requires 8 relevant chunks but only 4 appear → recall = **50%**.
+
+---
+
+### **2. Context Precision**
+
+Of the retrieved chunks, how many are relevant?
+
+Example:
+If 10 chunks were returned but only 4 were useful → precision = **40%**.
+
+High recall + low precision → too much noise.
+Low recall + high precision → missing important items.
+
+---
+
+### **3. MRR (Mean Reciprocal Rank)**
+
+Evaluates how early the first relevant chunk appears.
+
+---
+
+### **4. NDCG (Normalized Discounted Cumulative Gain)**
+
+Rewards retrieval systems that rank the most important chunks higher.
+
+---
+
+## **B. Generation Metrics** (How well did the LLM use retrieved data?)
+
+### **1. Faithfulness/Hallucination Rate**
+
+Checks if the answer is grounded in retrieved data.
+
+* Fully Faithful → No hallucinations
+* Partially Faithful → Some correct info + some wrong additions
+* Not Faithful → Unsupported answer
+
+---
+
+### **2. Relevance**
+
+Is the answer appropriate and aligned with the user's query?
+
+---
+
+### **3. Factuality**
+
+Is the information true and verifiable?
+
+---
+
+### **4. Fluency and Coherence**
+
+Does the answer read well?
+
+---
+
+# 9. RAG Metrics Table (Conceptual Summary)
+
+| What we test | What we compare                  | Metrics used                                 |
+| ------------ | -------------------------------- | -------------------------------------------- |
+| Retrieval    | Retrieved chunks vs ideal chunks | Recall, Precision, MRR, NDCG                 |
+| Generation   | Model output vs ideal answer     | Faithfulness, Relevance, Fluency, Factuality |
+
+---
+
+# 10. Implementation Components of Enterprise RAG
+
+Enterprise RAG is not just retrieval + generation. It requires multiple components.
+
+---
+
+## **1. Document Parsing**
+
+### Traditional OCR tools:
+
+* Amazon Textract
+* EasyOCR
+* Docling
+
+### When documents contain tables, charts, or messy formatting:
+
+Use multimodal models (GPT-4o, Mistral OCR, etc.).
+
+Document parsing quality affects the entire RAG pipeline.
+
+---
+
+## **2. Chunking**
+
+Chunk size determines retrieval quality.
+
+### **General rule:**
+
+**Chunk size = 5–10× answer length**
+
+But there are many exceptions.
+
+### Example: Simple Factoid Query
+
+Question: “What is the capital of France?”
+A small chunk of 5–20 tokens is sufficient.
+
+### Example: Complex Explanation
+
+If chunks are too small:
+
+* Retrieval becomes fragmented
+* The LLM cannot reconstruct meaning
+* Answers become disjointed
+
+Increasing chunk size to **300–400 tokens** often restores coherence.
+
+### Chunking Strategies:
+
+| Strategy          | Best for             | Description                     |
+| ----------------- | -------------------- | ------------------------------- |
+| Fixed-Length      | Manuals, legal docs  | Simple splitting by token count |
+| Sentence-Based    | Articles, essays     | Natural-language boundaries     |
+| Paragraph-Based   | Long-form text       | Coherent sections               |
+| Semantic Chunking | Code, technical docs | Based on topic shifts           |
+| Hybrid            | General RAG          | Combines multiple strategies    |
+
+---
+
+## **3. Embedding Models**
+
+Choose based on:
+
+* MTEB leaderboard scores
+* Languages supported
+* Dimensionality
+* Domain performance
+
+Embeddings directly determine retrieval quality.
+
+---
+
+## **4. Vector Databases**
+
+Capabilities vary widely.
+Consider:
+
+* Vector search (semantic similarity)
+* Keyword search (e.g., BM25)
+* Geo search
+* Text-only vs multimodal embeddings
+* Cost and scalability
+
+---
+
+# 11. Common Enterprise RAG Challenges
+
+Over **80% of enterprise RAG systems struggle with retrieval**.
+
+The typical problems are:
+
+### **1. Retrieval Problems**
+
+* Wrong chunks retrieved
+* Missing key chunks
+* Too much noise
+* Poor chunking strategy
+
+### **2. Generation Problems**
+
+* The LLM ignores context
+* The LLM hallucinates beyond the retrieved data
+* Context is too fragmented
+
+### **3. Performance Optimization**
+
+Balancing:
+
+* Cost
+* Latency
+* Accuracy
+* Recall/precision trade-offs
+
+---
+
+# ⭐ Final Takeaway
+
+RAG is fundamental for building real-world enterprise AI systems.
+It solves statelessness, context limitations, and hallucination issues by connecting LLMs to **external knowledge** through a retrieval pipeline.
+
+When implemented well, RAG enables:
+
+* Reliable factual grounding
+* Personalized responses
+* Scalable knowledge access
+* More capable workflow agents
+* Safer, more accurate outputs
+
+But RAG requires careful design:
+Document parsing → chunking → embeddings → vector search → retrieval → evaluation.
+
+Each component matters, and each one must be evaluated continuously.
+
+---
+
 ## What is Agentic AI?
 
 Agentic AI is defined as the combination of **Generative AI** plus the capacity for AI models to call APIs and tools (such as code executors or HTTP Requests), retrieve external memory as required for a task, and generate a plan which involves a set of actions.
