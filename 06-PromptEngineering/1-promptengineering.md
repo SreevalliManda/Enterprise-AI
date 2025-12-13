@@ -8,16 +8,16 @@
 
 ### **Levels of Prompt Engineering**
 
-a. Advanced Methods
-b. Automatic Optimization
-c. Reasoning Models
+- Advanced Methods
+- Automatic Optimization  
+- Reasoning Models
 
 ---
 
 ### **Building Workflow Agents**
 
-a. Zapier Agents
-b. Hubspot Agents
+- Zapier Agents
+- Hubspot Agents
 
 ---
 
