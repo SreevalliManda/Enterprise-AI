@@ -260,3 +260,14 @@ In modern AI systems, **prompt engineering is just one tool** inside the much la
 And as AI continues to evolve into agentic, multi-step systems, **context engineering becomes the dominant skill**.
 
 ---
+
+# 10. Additional Resources
+
+For deeper understanding and practical implementation of context engineering, explore these valuable resources:
+
+* **[Context-Engineering Repository](https://github.com/davidkimai/Context-Engineering)** - Practical examples and implementations
+* **[12-Factor Agents](https://github.com/humanlayer/12-factor-agents)** - Architectural principles for building robust AI agents
+* **[Context Engineering for AI Agents: Lessons from Building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)** - Real-world case study and lessons learned
+* **[Context Engineering Deep Dive (Video)](https://www.youtube.com/watch?v=nyKvyRrpbyY)** - Comprehensive video explanation
+
+---
